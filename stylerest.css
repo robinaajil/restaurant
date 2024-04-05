@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hearder{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    
+
+}
+.header-section{
+    height: 100%;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-section a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #282828;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: all 0.5s;
+}
+.header-section a:hover{
+    color: #f40000;
+
+}
+.header-section a:first-child{
+    color: #f40000;
+}
+.header-left,
+.header-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.header-center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-center::after{
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+/* HEADING FINESHED */
+.introduction{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduction img{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -2;
+}
+.heading{
+    font-size: 100px;
+    font-weight: 100px;
+    margin-top: -30%;
+    font-family: "Henny Penny", system-ui;
+    color:#fff;
+
+}
+.heading span:nth-child(2){
+    color:#f40000;
+}
+/* meal section started */
+.meal-container{
+    width: 100%;
+    height: 100%;
+    background-color: #ede4e4;
+    
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.meal{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: #eee7e7;
+    color: #150e0e;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0,0, 0.05);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 6px solid transparent;
+    transition: all 0.3s;
+
+}
+.meal:hover{
+    border-bottom: #f40000;
+    color: #f40000;
+    
+}
+.meal-name{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+    
+}
+/* offers */
+.offers{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 6%;
+}
+.offers-heading1{
+    color: #f40000;
+    font-family:sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+
+}
+.offers-heading2{
+    color:#282828;
+    font-family:sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+
+    
+}
+.discount-container{
+    width: 100%;
+    height: 400px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.discount-card{
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.offer-name{
+    color: #282828;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.offers-description{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    color: #797979;
+    font-family: sans-serif;
+    font-size: 17px;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+
+}
+.off{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.2rem;
+    color: #f40000;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* menu section*/
+.menu-container{
+   margin-top: 8%;
+    width:100%;
+   min-height: 150vh;
+    background-image: url(https://media.istockphoto.com/id/1045929570/photo/burgers-and-sandwich-with-light-beer.webp?b=1&s=170667a&w=0&k=20&c=yYcrlbGcNLIv3zfmJYxTDmVKzP_GKIKAl1F6-1h8aHs=);
+    background-repeat: no-repeat;
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-heading1{
+    
+    color: #f40000;
+    font-family:sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+.menu-heading2{
+    color:#fff;
+    font-family:sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom:100 px;
+
+}
+.menu{
+    width: 60%;
+    height: 130vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-content{
+    width: 80%;
+    height: 25%;
+    padding: 2%;
+    
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 50px;
+}
+.food-content{
+    width: 70%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.food-name{
+    margin-bottom: 12px;
+    color: #282828;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 24px;
+    font-weight: 600;
+}
+.food-description{
+    color: #100e0e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+.food-cost{
+    color: #f40000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+.imgs{
+    border-radius: 50%;
+}
+#link{
+    text-decoration: none;/* to remove underline */
+    color: #000000;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* about */
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  
+}
+.about{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+        
+
+}
+.aboutas h1{
+color: #f40000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition:0.5s ease;
+
+}
+.about-content{
+flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666666;
+}
+.about-content a read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+border-radius: 25px;
+margin-top: 15px;
+transition: 0.3s ease;
+}
+
+.contact{
+    
+    background-image:url(https://imgmedia.lbb.in/media/2023/11/65645001ab3ff2772971a8ec_1701072897774.jpg) ;
+    padding: 50px;
+    text-align: center;
+   
+}
+.container1{
+    max-width: 900px;
+    margin: 0 auto;
+    color: rgb(10, 10, 10);
+
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid: 30x;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+}
+input :focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+.contact-info{
+   margin-bottom:50%;
+    padding: 60px;
+    color: red;
+}
+.contact-info p{
+padding: 10px;
+
+}    
+   
+
+
+
